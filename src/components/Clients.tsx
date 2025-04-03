@@ -2,7 +2,7 @@
 import { cn } from "@/lib/utils";
 import { Marquee } from "./magicui/marquee.tsx";
 import dellcube from "../assets/clients/dellcube.png"
-import ctrlClothing from "../assets/clients/ctrlClothing.png"
+// import ctrlClothing from "../assets/clients/ctrlClothing.png"
 
 const reviews = [
   {
@@ -27,7 +27,7 @@ const reviews = [
 ];
 
 const firstRow = reviews.slice(0, reviews.length / 2);
-const secondRow = reviews.slice(reviews.length / 2);
+// const secondRow = reviews.slice(reviews.length / 2);
 
 const ReviewCard = ({
   img

@@ -1,36 +1,42 @@
-import { Statistics } from "./Statistics";
-import pilot from "../assets/pilot.png";
+import HeroVideoDialog from "./magicui/hero-video-dialog";
 
-export const About = () => {
+export function About() {
   return (
-    <section
-      id="about"
-      className="container py-24 sm:py-32"
-    >
-      <div className="bg-muted/50 border rounded-lg py-12">
-        <div className="px-6 flex flex-col-reverse md:flex-row gap-8 md:gap-12">
-          <img
-            src={pilot}
-            alt=""
-            className="w-[300px] object-contain rounded-lg"
-          />
-          <div className="bg-green-0 flex flex-col justify-between">
-            <div className="pb-6">
-              <h2 className="text-3xl md:text-4xl font-bold">
-                <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-                  About{" "}
-                </span>
-                Company
-              </h2>
-              <p className="text-xl text-muted-foreground mt-4">
-                At Sevora, we specialize in service-based product development, helping businesses bring their ideas to life with cutting-edge technology and expert solutions. Whether you're in logistics, e-commerce, job portals, or healthcare, we have the expertise to develop tailored solutions that meet your unique needs.
-              </p>
-            </div>
-
-            <Statistics />
-          </div>
+    <>
+      <div className="max-w-5xl mx-auto">
+        <div
+          className="text-4xl pb-5 md:text-7xl text-center
+         bg-clip-text text-transparent bg-gradient-to-b
+          from-blue-500 to-neutral-400   dark:bg-gradient-to-b
+          from-blue-500 to-neutral-50 bg-opacity-50 mt-20"
+        >
+          About Us
         </div>
+        <p
+          className="mt-4 text-lg font-normal max-w-lg text-center mx-auto dark:text-neutral-300 text-black"
+        >
+          See how businesses thrive with Servora! From web development to AI solutions, our clients trust us to deliver excellence.
+        </p>
       </div>
-    </section>
+      <section className="container pt-20 md:py-22">
+
+        <div className="relative">
+          <HeroVideoDialog
+            className="block dark:hidden"
+            animationStyle="top-in-bottom-out"
+            videoSrc="https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
+            thumbnailSrc="https://startup-template-sage.vercel.app/hero-light.png"
+            thumbnailAlt="Hero Video"
+          />
+          <HeroVideoDialog
+            className="hidden dark:block"
+            animationStyle="top-in-bottom-out"
+            videoSrc="https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
+            thumbnailSrc="https://startup-template-sage.vercel.app/hero-dark.png"
+            thumbnailAlt="Hero Video"
+          />
+        </div>
+      </section>
+    </>
   );
-};
+}

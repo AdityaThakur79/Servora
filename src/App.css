@@ -119,7 +119,47 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Scrollbar Width & Height */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: #3b82f6;
+  border-radius: 10px;
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+  background: #909090;
+  /* Blue-500 to Neutral-50 */
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+/* Scrollbar Handle on Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-track {
+    background: #909090;
+
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #07A7DB;
+
   }
 }

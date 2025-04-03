@@ -14,22 +14,20 @@ import { Services } from "./components/Services";
 // import { Team } from "./components/Team";
 import { Testimonials } from "./components/Testimonials";
 import "./App.css";
+import { Clients } from "./components/Clients";
+import { TextAnimate } from "./components/TextAnimate";
+ 
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
-      {/* <Sponsors /> */}
-      <About />
+      <Clients />
+      {/* <About /> */}
       <Services />
-      {/* <HowItWorks /> */}
-      {/* <Features /> */}
       <Testimonials />
-      {/* <Team /> */}
-      {/* <Pricing /> */}
-      {/* <Newsletter /> */}
-      {/* <FAQ /> */}
+      <TextAnimate />
       <Cta />
       <Footer />
       <ScrollToTop />

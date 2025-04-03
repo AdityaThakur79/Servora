@@ -138,8 +138,6 @@ export const HeroCards = () => {
           <div className="space-y-4">
             {[
               "Custom Software Solutions",
-              "Scalable Infrastructure",
-              "Enhanced User Experience",
             ].map((benefit: string) => (
               <span key={benefit} className="flex">
                 <Check className="text-green-500" /> <h3 className="ml-2">{benefit}</h3>

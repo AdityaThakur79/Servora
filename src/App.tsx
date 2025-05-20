@@ -9,13 +9,20 @@ import { Navbar } from "./components/Navbar";
 // import { Newsletter } from "./components/Newsletter";
 // import { Pricing } from "./components/Pricing";
 import { ScrollToTop } from "./components/ScrollToTop";
-import { Services } from "./components/Services";
+// import { Services } from "./components/Services";
 // import { Sponsors } from "./components/Sponsors";
 // import { Team } from "./components/Team";
 import { Testimonials } from "./components/Testimonials";
 import "./App.css";
 import { Clients } from "./components/Clients";
-import { TextAnimate } from "./components/TextAnimate";
+ import { TextAnimate } from "./components/TextAnimate";
+import FeatureSection from "./components/FeatureSection";
+import ServicesSection from "./components/ServicesSection";
+import IndustriesSection from "./components/IndustriesSection";
+import PortfolioSection from "./components/PortfolioSection";
+import ProcessSection from "./components/ProcessSection";
+import FAQSection from "./components/FAQSection";
+// import AboutSection from "./components/AboutSection";
  
 
 function App() {
@@ -24,10 +31,17 @@ function App() {
       <Navbar />
       <Hero />
       <Clients />
+      <FeatureSection/>
+      <ServicesSection/>
+      <IndustriesSection/>
+      <PortfolioSection/>
+      <ProcessSection/>
+      {/* <AboutSection/> */}
       {/* <About /> */}
-      <Services />
+      {/* <Services /> */}
       <Testimonials />
       <TextAnimate />
+      <FAQSection/>
       <Cta />
       <Footer />
       <ScrollToTop />

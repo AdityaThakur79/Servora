@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { SetStateAction, useState } from 'react';
 import { FaPlus, FaMinus } from 'react-icons/fa';
 import { Button } from './ui/button';
 
@@ -32,7 +32,7 @@ const FAQSection = () => {
     },
   ];
 
-  const toggleFAQ = (index) => {
+  const toggleFAQ = (index: SetStateAction<number>) => {
     setOpenIndex(openIndex === index ? -1 : index);
   };
 

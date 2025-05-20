@@ -52,8 +52,8 @@ export const HeroCards = () => {
 
         <CardContent className="text-center pb-2">
           <p>
-            "At Servora, we believe in transforming ideas into seamless digital solutions.
-            Our mission is to empower businesses with innovative and scalable technology."
+            At Servora, we believe in transforming ideas into seamless digital solutions.
+            Our mission is to empower businesses with innovative and scalable technology.
           </p>
         </CardContent>
 

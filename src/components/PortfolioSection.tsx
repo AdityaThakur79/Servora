@@ -149,7 +149,7 @@ const PortfolioSection = () => {
                 <a
                   href={project.link}
                   className="text-primary font-medium hover:underline"
-                  
+                  target='_blank'
                 >
                   View Live
                 </a>

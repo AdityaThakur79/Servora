@@ -1,7 +1,12 @@
 import { FaCode, FaPaintBrush, FaRocket, FaMobile, FaChartLine, FaLock } from 'react-icons/fa';
 
 const FeatureSection = () => {
-  const features = [
+  const features : {
+  title: string;
+  description: string;
+  icon: JSX.Element;
+  color: GradientColor;
+}[] = [
     {
       title: 'Expert Development',
       description: 'Our developers use the latest technologies and best practices to deliver high-performance, scalable solutions.',
@@ -40,27 +45,34 @@ const FeatureSection = () => {
     },
   ];
 
-  const getGradient = (color) => {
-    const gradients = {
-      blue: 'from-blue-500 to-blue-600',
-      purple: 'from-purple-500 to-purple-600',
-      orange: 'from-orange-500 to-orange-600',
-      green: 'from-green-500 to-green-600',
-      red: 'from-red-500 to-red-600',
-      teal: 'from-teal-500 to-teal-600',
-    };
-    return gradients[color] || 'from-primary to-primary-dark';
-  };
+  type GradientColor = 'blue' | 'purple' | 'orange' | 'green' | 'red' | 'teal';
+
+const getGradient = (color: GradientColor) => {
+  const gradients = {
+    blue: 'from-blue-500 to-blue-600',
+    purple: 'from-purple-500 to-purple-600',
+    orange: 'from-orange-500 to-orange-600',
+    green: 'from-green-500 to-green-600',
+    red: 'from-red-500 to-red-600',
+    teal: 'from-teal-500 to-teal-600',
+  } as const;
+
+  return gradients[color];
+};
 
   return (
-    <section className="section bg-gray-50 py-20">
+    <section className="section bg-gray-50 py-0">
       <div className="container">
-        <div className="text-center mb-16">
-          <h2 className="section-title">Why Choose Servora</h2>
-          <p className="section-subtitle">
-            We combine technical expertise with creative talent to deliver exceptional digital solutions
-          </p>
-        </div>
+          <div className="max-w-5xl mx-auto pb-10">
+          <div
+            className="text-4xl pb-5 md:text-7xl text-center
+         bg-clip-text text-transparent bg-gradient-to-b
+          from-blue-500 to-neutral-400   dark:bg-gradient-to-b
+          from-blue-500 to-neutral-50 bg-opacity-50 mt-20"
+          >
+         Why Choose Servora
+          </div>
+          </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (

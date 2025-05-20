@@ -12,11 +12,11 @@ export const Footer = () => {
           </a>
 
           <ul className="text-lg flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-16 mb-10 border-b border-gray-200">
-            <li><a href="#" className="text-gray-800 dark:text-white">Pagedone</a></li>
-            <li><a href="#" className=" text-gray-800 dark:text-white">Products</a></li>
-            <li><a href="#" className=" text-gray-800 dark:text-white">Resources</a></li>
+            <li><a href="#" className="text-gray-800 dark:text-white">About</a></li>
+            <li><a href="#" className=" text-gray-800 dark:text-white">Testimonials</a></li>
+            <li><a href="#" className=" text-gray-800 dark:text-white">Clients</a></li>
             <li><a href="#" className=" text-gray-800 dark:text-white">Blogs</a></li>
-            <li><a href="#" className=" text-gray-800 dark:text-white">Support</a></li>
+            <li><a href="#" className=" text-gray-800 dark:text-white">Faqs</a></li>
           </ul>
           <div className="flex space-x-10 justify-center items-center mb-14">
             <a href="#" className="block  text-gray-900  dark:text-white transition-all duration-500  ">

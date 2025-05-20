@@ -16,7 +16,7 @@ const PortfolioSection = () => {
     {
       id: 2,
       title: 'Dellcube Logistics',
-      category: 'app',
+      category: 'web',
       image: "https://servora.in/assets/dellcube-service-Chj8gV7r.png",
       tags: ['Logistics', 'Web Development'],
       link:"https://dellcube-stg.vercel.app/"
@@ -29,30 +29,30 @@ const PortfolioSection = () => {
       tags: ['Web Design', 'Corporate', 'WordPress'],
       link:"https://mamatahearingaid.in/"
     },
-    {
-      id: 4,
-      title: 'Food Delivery Platform',
-      category: 'app',
-      image: "https://adityathakur.vercel.app/project_images/ctrlClothing.png",
-      tags: ['Food & Hospitality', 'Web App', 'Mobile App'],
-      link:"http://ctrlclothing.in/"
-    },
-    {
-      id: 5,
-      title: 'Real Estate Listings Portal',
-      category: 'web',
-      image: "https://adityathakur.vercel.app/project_images/ctrlClothing.png",
-      tags: ['Real Estate', 'Web Development', 'SEO'],
-      link:"http://ctrlclothing.in/"
-    },
-    {
-      id: 6,
-      title: 'Logistics Management System',
-      category: 'software',
-      image: "https://adityathakur.vercel.app/project_images/ctrlClothing.png",
-      tags: ['Logistics', 'Software', 'Web App'],
-      link:"http://ctrlclothing.in/"
-    },
+    // {
+    //   id: 4,
+    //   title: 'Food Delivery Platform',
+    //   category: 'app',
+    //   image: "https://adityathakur.vercel.app/project_images/ctrlClothing.png",
+    //   tags: ['Food & Hospitality', 'Web App', 'Mobile App'],
+    //   link:"http://ctrlclothing.in/"
+    // },
+    // {
+    //   id: 5,
+    //   title: 'Real Estate Listings Portal',
+    //   category: 'web',
+    //   image: "https://adityathakur.vercel.app/project_images/ctrlClothing.png",
+    //   tags: ['Real Estate', 'Web Development', 'SEO'],
+    //   link:"http://ctrlclothing.in/"
+    // },
+    // {
+    //   id: 6,
+    //   title: 'Logistics Management System',
+    //   category: 'software',
+    //   image: "https://adityathakur.vercel.app/project_images/ctrlClothing.png",
+    //   tags: ['Logistics', 'Software', 'Web App'],
+    //   link:"http://ctrlclothing.in/"
+    // },
   ];
 
   const filteredProjects = filter === 'all' 
